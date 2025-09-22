@@ -23,11 +23,11 @@ int main() {
 
     // Parent waits for first child
     waitpid(pid1, &status, 0);
-    printf("First child exited with status %d\n", status >> 5);
+    printf("First child exited with status %d\n", status >> 8);
 
     // Parent waits for second child
     waitpid(pid2, &status, 0);
-    printf("Second child exited with status %d\n", status >> 5);
+    printf("Second child exited with status %d\n", status >> 8);
 
     return 0;
 }
