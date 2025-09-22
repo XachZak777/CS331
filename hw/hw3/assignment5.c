@@ -6,19 +6,13 @@ int main() {
     pid_t pid = fork();
 
     if (pid == 0) {
-        // Child process
-        printf("Child process (PID -> %ld) finished.\n", (long)getpid());
+        printf("Child process (PID -> %ld) finished...\n", (long)getpid());
         return 0;
     }
     else {
-        // Parent process
-        printf("Parent process (PID -> %ld) runnin.\n", (long)getpid());
-
-        // wait(NULL);
-
-        sleep(10);  // observe zombie before parent exits
+        printf("Parent process (PID -> %ld) running...\n", (long)getpid());
+        sleep(100);
     }
 
     return 0;
 }
-
