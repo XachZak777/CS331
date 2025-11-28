@@ -18,4 +18,4 @@ Then user can use the following commands for running with different approaches:
 ```
 *Short Explanation*
 
-Version A can give the wrong result because counter++ is not atomic. Two threads can read-modify-write simultaneously and overwrite updates (race condition). Versions B and C lock access to the shared variable using mutex or spinlock, ensuring only one thread updates counter at a time and preventing lost updates.
+Version A can give the wrong result because `counter++` is not atomic. Two threads can read-modify-write simultaneously and overwrite updates (race condition). Versions B and C lock access to the shared variable using mutex or spinlock, ensuring only one thread updates counter at a time and preventing lost updates.
