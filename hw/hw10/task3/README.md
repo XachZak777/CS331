@@ -1,4 +1,4 @@
-To run Task 2 use the following program:
+To run Task 3 use the following command:
 
 ```shell
 gcc -lpthread assignment3.c -o task3 && ./task3

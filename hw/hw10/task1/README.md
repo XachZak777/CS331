@@ -1,4 +1,4 @@
-To run Task 1 use the following program:
+To run Task 1 use the following command:
 ```shell
 gcc -lpthread assignment1.c -o task1
 ./task1

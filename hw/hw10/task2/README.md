@@ -1,4 +1,4 @@
-To run Task 2 use the following program:
+To run Task 2 use the following command:
 ```shell
 gcc -lpthread assignment2.c -o bank_account
 ```
