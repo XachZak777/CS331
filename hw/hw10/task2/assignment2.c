@@ -17,13 +17,19 @@ char lock_type = 'M'; // 'M' = mutex, 'S' = spinlock
 char cs_type = 'S';   // 'S' = short, 'L' = long
 
 void lock() {
-    if (lock_type == 'M') pthread_mutex_lock(&mutex_lock);
-    else pthread_spin_lock(&spin_lock);
+    if (lock_type == 'M') {
+	    pthread_mutex_lock(&mutex_lock);
+    } else {
+	    pthread_spin_lock(&spin_lock);
+    }
 }
 
 void unlock() {
-    if (lock_type == 'M') pthread_mutex_unlock(&mutex_lock);
-    else pthread_spin_unlock(&spin_lock);
+    if (lock_type == 'M') {
+	    pthread_mutex_unlock(&mutex_lock);
+    } else { 
+	    pthread_spin_unlock(&spin_lock);
+    }
 }
 
 void* deposit(void* arg) {

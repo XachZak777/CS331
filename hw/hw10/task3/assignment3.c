@@ -84,7 +84,8 @@ void* consumer(void* arg) {
 int main() {
     printf("[INFO] Starting Producer-Consumer Simulation...\n");
 
-    pthread_t producers[PRODUCERS], consumers[CONSUMERS];
+    pthread_t producers[PRODUCERS];
+    pthread_t consumers[CONSUMERS];
 
     pthread_mutex_init(&buffer_mutex, NULL);
     sem_init(&empty_slots, 0, BUFFER_SIZE);
