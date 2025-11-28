@@ -1,11 +1,6 @@
 To run Task 2 use the following program:
-
 ```shell
 gcc -lpthread assignment2.c -o bank_account
-```
-Arguments that you can use for the program execution:
-```shell
-
 ```
 Then user can use the following commands for running with different approaches:
 ```shell
